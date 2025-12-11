@@ -1,0 +1,353 @@
+/* ------------------------------------------
+   BASE STYLES
+------------------------------------------- */
+
+:root {
+    --bg: #f5f5f3;
+    --bg-soft: #ffffffd8;
+    --text: #1a1a1a;
+    --muted: #6f6a63;
+    --border: rgba(0, 0, 0, 0.08);
+    --accent: #c9b5ff;
+    --radius: 18px;
+
+    --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.06);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+
+/* ------------------------------------------
+   NAVBAR
+------------------------------------------- */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-soft);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+
+    padding: 14px 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.05em;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.nav a {
+    margin-left: 22px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: var(--text);
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--text);
+    transition: width 0.2s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+
+/* ------------------------------------------
+   HERO SECTION
+------------------------------------------- */
+
+.hero {
+    padding: 110px 7vw 90px;
+    background: radial-gradient(circle at top left, #ffffff, var(--bg));
+}
+
+.tagline {
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    margin: 14px 0;
+}
+
+.underline {
+    border-bottom: 2px solid var(--border);
+}
+
+.subtitle {
+    max-width: 540px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 14px;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background: #ffffffa8;
+}
+
+.primary {
+    background: var(--text);
+    color: var(--bg);
+    box-shadow: var(--shadow-soft);
+}
+
+.primary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------------------
+   GENERIC SECTION STYLING
+------------------------------------------- */
+
+.section {
+    padding: 80px 7vw;
+}
+
+.section-header h2 {
+    font-family: "Playfair Display", serif;
+    margin: 0 0 6px;
+    font-size: 2.3rem;
+}
+
+.section-sub {
+    margin: 0;
+    color: var(--muted);
+    letter-spacing: 0.14em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+
+/* ------------------------------------------
+   GRID FOR ARCHITECTURE & ART
+------------------------------------------- */
+
+.grid {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #ffffffb8;
+    border-radius: var(--radius);
+    padding: 22px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-soft);
+}
+
+.card-tag {
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.card-title {
+    margin: 6px 0;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+}
+
+.card-meta {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+
+/* ------------------------------------------
+   WRITING SECTION
+------------------------------------------- */
+
+.writing-list {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.writing-card {
+    background: #ffffffd5;
+    border-radius: var(--radius);
+    padding: 20px;
+    border: 1px solid var(--border);
+}
+
+.writing-card h3 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.meta {
+    margin: 4px 0;
+    font-size: 0.75rem;
+    color: var(--muted);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.excerpt {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+
+/* ------------------------------------------
+   ABOUT SECTION
+------------------------------------------- */
+
+.about-grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 26px;
+}
+
+.about-grid p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+
+/* ------------------------------------------
+   CONTACT SECTION
+------------------------------------------- */
+
+.contact-box {
+    background: #ffffffc9;
+    padding: 26px;
+    border-radius: var(--radius);
+    border: 1px dashed var(--border);
+    width: fit-content;
+}
+
+.email a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+}
+
+.note {
+    font-size: 0.75rem;
+    color: var(--muted);
+}
+
+
+/* ------------------------------------------
+   FOOTER
+------------------------------------------- */
+
+.footer {
+    text-align: center;
+    padding: 26px 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    margin-top: 80px;
+}
+
+
+/* ------------------------------------------
+   ANIMATIONS (FADE-UP ON SCROLL)
+------------------------------------------- */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* ------------------------------------------
+   RESPONSIVE
+------------------------------------------- */
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav a {
+        margin-left: 0;
+        margin-right: 12px;
+        display: inline-block;
+    }
+
+    .hero h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
