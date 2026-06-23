@@ -205,6 +205,16 @@ body {
     text-transform: uppercase;
 }
 
+.series-intro {
+    margin: 28px 0 0;
+    max-width: 640px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    color: #333;
+}
+
 
 /* ------------------------------------------
    GRID FOR ARCHITECTURE & ART
