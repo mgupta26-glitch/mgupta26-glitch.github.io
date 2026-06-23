@@ -382,6 +382,184 @@ body {
 
 
 /* ------------------------------------------
+   WRITING ARCHIVE
+------------------------------------------- */
+
+.writing-archive {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 80px 7vw 40px;
+}
+
+.writing-archive-header {
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.writing-archive-header .meta {
+    margin: 0 0 14px;
+}
+
+.writing-archive-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.writing-section {
+    margin-bottom: 110px;
+}
+
+.writing-section:last-of-type {
+    margin-bottom: 60px;
+}
+
+.writing-section-header {
+    margin-bottom: 56px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.writing-section-header h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.writing-section-sub {
+    margin: 10px 0 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+}
+
+.poem,
+.fragment,
+.reflection {
+    margin-bottom: 72px;
+}
+
+.poem:last-child,
+.fragment:last-child,
+.reflection:last-child {
+    margin-bottom: 0;
+}
+
+.poem-header,
+.fragment-header,
+.reflection-header {
+    margin-bottom: 24px;
+}
+
+.poem-header h3,
+.fragment-header h3,
+.reflection-header h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.45rem;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.poem-meta {
+    margin: 0;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.poem-context {
+    margin: 14px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: #555;
+    font-style: italic;
+    max-width: 520px;
+}
+
+.poem-text {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.95;
+    color: #1a1a1a;
+}
+
+.poem-text p {
+    margin: 0 0 1.4em;
+}
+
+.poem-text p:last-child {
+    margin-bottom: 0;
+}
+
+.poem-read-full,
+.reflection-link {
+    margin-top: 24px;
+    font-size: 0.88rem;
+    letter-spacing: 0.04em;
+}
+
+.poem-read-full a,
+.reflection-link a {
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+}
+
+.reflection-excerpt {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #2a2a2a;
+    margin: 0;
+}
+
+
+/* ------------------------------------------
+   POEM PAGE (single)
+------------------------------------------- */
+
+.poem-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 90px 7vw 60px;
+}
+
+.poem-page-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.poem-page-header .poem-meta {
+    margin-bottom: 14px;
+}
+
+.poem-page-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0 0 14px;
+    letter-spacing: 0.01em;
+}
+
+.poem-page-header .poem-context {
+    margin: 16px auto 0;
+    text-align: center;
+}
+
+.poem-page .poem-text {
+    font-size: 1.15rem;
+}
+
+
+/* ------------------------------------------
    ESSAY PAGE
 ------------------------------------------- */
 
