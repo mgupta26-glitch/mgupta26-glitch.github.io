@@ -238,7 +238,8 @@ body {
 
 .card-img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 12px;
     margin-bottom: 14px;
     display: block;
@@ -374,9 +375,8 @@ body {
 }
 
 .photo-flow {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
+    column-count: 3;
+    column-gap: 22px;
 }
 
 .photo-flow img {
@@ -384,6 +384,20 @@ body {
     height: auto;
     display: block;
     border-radius: 6px;
+    margin: 0 0 22px;
+    break-inside: avoid;
+}
+
+@media (max-width: 960px) {
+    .photo-flow {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 620px) {
+    .photo-flow {
+        column-count: 1;
+    }
 }
 
 .volume-nav {
