@@ -205,6 +205,10 @@ body {
     text-transform: uppercase;
 }
 
+.grid + .section-header {
+    margin-top: 80px;
+}
+
 .series-intro {
     margin: 28px 0 0;
     max-width: 640px;
