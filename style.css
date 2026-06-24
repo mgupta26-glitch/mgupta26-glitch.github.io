@@ -331,6 +331,80 @@ body {
 
 
 /* ------------------------------------------
+   PHOTOGRAPHY VOLUME PAGE
+------------------------------------------- */
+
+.photography-volume {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 80px 5vw 40px;
+}
+
+.volume-header {
+    margin-bottom: 80px;
+    text-align: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volume-eyebrow {
+    margin: 0 0 14px;
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.volume-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin: 0 0 24px;
+    letter-spacing: 0.01em;
+}
+
+.volume-thesis {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #444;
+}
+
+.photo-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.photo-flow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.volume-nav {
+    margin-top: 90px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 0.88rem;
+}
+
+.volume-nav a {
+    text-decoration: none;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+}
+
+
+/* ------------------------------------------
    PROJECT PAGE
 ------------------------------------------- */
 
